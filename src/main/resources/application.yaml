@@ -1,0 +1,16 @@
+server:
+  port: 9500
+  servlet:
+    context-path: /hometask_7_app
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/students
+    username: root
+    password: admin
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
